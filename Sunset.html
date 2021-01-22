@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+    border: solid 1px white;
+    background:#1A4341;
+    padding: 100px 0;
+  }
+
+.main{
+  position: relative;
+  z-index: 0;
+  left:0;
+}
+
+.outer {
+  width: 200px;
+  height: 200px;
+  background: #998235;
+  border-radius: 50%;
+  z-index: 1;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.box{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: 100px;
+  width: 300px;
+  background: #1A4341;
+  overflow: hidden;
+  z-index: 5;
+}
+
+.inner{
+  height:250px;
+  width:250px;
+  background:#F3AC3C;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-bottom: 1;
+  transform: translate(-50%,-50%);
+  
+}
+
+.line{
+  position:absolute;
+  height:20px;
+  width:80vw;
+  background:#1A4341;
+  z-index: 10;
+}
+
+.l1{top:30px;}
+.l2{top:70px;}
+.l3{top:110px;}
+.l4{top:150px;}
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="outer"></div>
+        <div class="box">
+            <div class="inner" />
+        </div>
+    </div>
+    <div class="line l1"></div>
+    <div class="line l2"></div>
+    <div class="line l3"></div>
+    <div class="line l4"></div>
+    </div>
+</body>
+
+</html>
